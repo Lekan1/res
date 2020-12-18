@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./images/top.svg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  /* background: white; */
+  background-attachment: fixed;
+  letter-spacing: -1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.logo h1{
+    font-family: 'Cedarville Cursive', cursive;
+    margin-left: 630px;
+    margin-top: -35px;
+}
+.logo img{
+    height: 100px;
+    margin-top: -80px;
+    margin-left: 600px;
+}
+.logo{
+    height: 10px;
+}
+#tr ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-top: 50px;
+  }
+  
+  #tr a {
+    background-color: rgb(255, 166, 0);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  [aria-controls="tr"] {
+    display: none;
+  }
+  .foot{
+    background-color: rgb(255, 166, 0);
+    height: 130px;
+    color: white;
+    margin-top: 560px;
+    
+}
+.foot h2{
+    width: 1000px;
+    margin-left:200px;
+}
+.foot p{
+    font-size: 20px;
+    margin-left: 200px;
+}
+.reservation h1{
+    font-size: 30px;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+.three1{
+    margin-left: 600px;
+    margin-top: -430px;
+}
+input{
+    background-color: rgb(13, 13, 122);
+    opacity: 0.7;
+    z-index: -1;
+    border: none;
+    font-size: 25px;
+    color: white;
+    width: 500px;
+}
+textarea{
+    background-color: rgb(13, 13, 122);
+    opacity: 0.7;
+    z-index: -1;
+    border: none;
+    font-size: 25px;
+    color: white;
+    width: 500px;
+}
+.three textarea{
+    height: 230px;
+}
+.reservation{
+    width: 100%;
+}
+#book{
+    width: 1100px;
+    margin-left: 200px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+#book:hover{
+    background-color: yellow;
+    color: silvEr;
+}
+.group{
+    margin-left: 200px;
+}
+select{
+    background-color: rgb(13, 13, 122);
+    opacity: 0.7;
+    z-index: -1;
+    width: 500px;
+    border: none;
+    font-size: 25px;
+    color: white;
+}
+#error{
+    margin: 2px auto;
+    font-size: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    width: 75%;
+    text-align: center;
+}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    display: none;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    background-color: #4CAF50;
+    color: white;
+    
+    font-size: 25px;
+  }
+  @media screen and (max-width: 768px) {
+    .foot h2{
+        margin-left: -0px;
+        width: 100%;
+    }
+    .foot p{
+        margin-left: 10px;
+    }
+    .logo{
+      display: none;
+    
+    }
+    .foods .food-card{
+      margin-left: -45px;
+    }
+    #tr{
+      display: none;
+    }
+    .topnav{
+      display: block;
+    }
+    
+    ::-webkit-scrollbar {
+      width: 20px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: red; 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #b30000; 
+    }
+    .three{
+        margin-left: -220px;
+    }
+    select{
+        width: 110%;
+    }
+    input{
+        width: 110%;
+    }
+    textarea{
+        width: 110%;
+    }
+    .three1{
+        margin-top: 100px;
+        margin-left: -220px;
+    }
+    #book{
+        width: 120%;
+        margin-left: -20px;
+    }
+  }
+   

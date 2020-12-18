@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Reservation page</title>
+    <link rel="stylesheet" href="css/reservation.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   
+
+    
+</head>
+<body>
+    <div class="logo">
+        <img src="images/v.jpg" alt="">
+        <h1>Cuisnine house</h1>
+    </div>
+    <div id="tr">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="dessert.html">Dessert</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="lunch nd drinks.html">Lunch and drinks</a></li>
+       </ul>
+    </div>
+    <div class="topnav">
+        <a href="#home" class="active">Cuisine house</a>
+        <div id="myLinks">
+            <a href="home.html">Home</a>
+            <a href="Breakfast.html">Breakfast</a>
+            <a href="dessert.html">Dessert</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="lunch nd drinks.html">Lunch nd drinks</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div class="reservation">
+         <h1>Make a reservation</h1>
+         <div id="error"></div>
+       
+         <form action="" id="myForm" name="inputs">
+             <div class="group">
+                <div class="three">
+                    <h2>Name</h2>
+                    <input type="text" placeholder="Your name.." name="name" id="name">
+                    <h2>No of people</h2>
+                    <input type="number"  placeholder="persons" id="peopleNumber" name="number">
+                    <h2>Resturant</h2>
+                    <select name="Resturant" id="resturant">
+                        <option value="">Ikeja,lagos</option>
+                        <option value="">Lekki,lagos</option>
+                        <option value="">Gbagada,lagos</option>
+                        <option value="">Bannana island,lagos</option>
+                        <option value="">Kuje,Abuja</option>
+                        <option value="">New karo,Abuja</option>
+                        <option value="">Ile ife,Benin</option>
+                    </select>
+                    <h2>Any specific request</h2>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Type here" name="request"></textarea>
+                </div>
+                <div class="three1">
+                    <h2>Phonenumber</h2>
+                    <input type="text" placeholder="Phonenumber" name="number " id="phoneNumber">
+                    <h2>Type of table</h2>
+                    <select name="table" id="Table">
+                        <option value="">Normal</option>
+                        <option value="">Golden</option>
+                        <option value="">Silver</option>
+                        <option value="">Plantinum</option>
+                    </select>
+                    <h2>Leave a message</h2>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Leave a message.."></textarea>
+                </div>
+             </div>
+             <input type="submit" id="book" value="Book" name="book" onclick="handleSubmit()" >
+         </form>
+    </div>
+    <div class="foot">
+        <footer>
+            <h2>2020 All Rights Reserved|Terms and Conditions|Privacy Policy</h2>
+            <p>Website Developed By Cuisine. Call Us for events: 07069217291</p>
+        </footer>
+        <script>
+            var name = document.inputs.name.value;
+            var people = document.inputs.number.value
+            var restaurant = document.getElementById("restaurant")
+            var phone = document.getElementById("phoneNumber")
+            var table = document.getElementById("Table")
+            var error = document.getElementById("error")
+
+            var form = document.getElementById("myForm");
+            function handleForm(event) {
+                 event.preventDefault(); 
+                 } 
+            form.addEventListener('submit', handleForm);
+
+            function handleSubmit(){  
+                if(name == "" || name == null ){
+                    error.innerHTML = "Make sure to fill neccessary criteria"
+                }else if (people = "" || people == null){
+                    error.innerHTML = "ENTER PEOPLE NUMBER"
+                }else{
+                    alert("Success")
+                }
+            }
+        </script>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myLinks");
+              if (x.style.display === "block") {
+                x.style.display = "none";
+              } else {
+                x.style.display = "block";
+              }
+            }
+            </script>
+      </div>
+</body>

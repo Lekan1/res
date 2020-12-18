@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("./images/top.svg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  /* background: white; */
+  background-attachment: fixed;
+  letter-spacing: -1px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.logo h1{
+    font-family: 'Cedarville Cursive', cursive;
+    margin-left: 630px;
+    margin-top: -35px;
+}
+.logo img{
+    height: 100px;
+    margin-top: -80px;
+    margin-left: 600px;
+}
+.logo{
+    height: 10px;
+}
+#tr ul {
+    display: grid;
+    grid-gap: 10px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    margin-top: 50px;
+  }
+  
+  #tr a {
+    background-color: rgb(255, 166, 0);
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  [aria-controls="tr"] {
+    display: none;
+  }
+  .foot{
+    background-color: rgb(255, 166, 0);
+    height: 100px;
+    color: white;
+    margin-top: 560px;
+    
+}
+.foot h2{
+    width: 1000px;
+    margin-left:200px;
+}
+.foot p{
+    font-size: 20px;
+    margin-left: 200px;
+}
+#myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    
+  }
+  .h2{
+      margin-top: 50px;
+  }
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+.foods{
+  display: grid;
+  margin: 200px auto 100px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 20px;
+  
+
+}
+#myUL h1{
+  text-align: center;
+}
+.foods .food-card{
+  position: relative;
+  width: 350px;
+  margin: 0 auto;
+  background-color: #333;
+  padding:20px;
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,.5);
+  overflow: hidden;
+}
+.foods .food-card .content{
+  z-index: 2;
+  position: relative;
+}
+
+.foods .food-card .english{
+  z-index: 1;
+  top: calc(100% - 2px);
+  left: 0;
+  background: url(../images/Englishbreakfast.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  
+}
+.foods .food-card:hover .english {
+  top: 0;
+  
+}
+.foods .food-card .isreal{
+  z-index: 1;
+  top: calc(100% - 2px);
+  left: 0;
+  background: url(../images/isreali.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  
+}
+.foods .food-card:hover .isreal {
+  top: 0;
+  
+}
+.foods .food-card .morocco{
+  z-index: 1;
+  top: calc(100% - 2px);
+  left: 0;
+  background: url(../images/morocco.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  
+}
+.foods .food-card:hover .morocco {
+  top: 0;
+  
+}
+.foods .food-card .poland{
+  z-index: 1;
+  top: calc(100% - 2px);
+  left: 0;
+  background: url(../images/polish.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  
+}
+.foods .food-card:hover .poland {
+  top: 0;
+  
+}
+.foods .food-card .port{
+  z-index: 1;
+  top: calc(100% - 2px);
+  left: 0;
+  background: url(../images/portugal.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  
+}
+.foods .food-card:hover .port {
+  top: 0;
+  
+}
+
+.foods .food-card .brazil{
+  z-index: 1;
+  top: calc(100% - 2px);
+  left: 0;
+  background: url(../images/brazil.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s;
+  
+}
+.foods .food-card:hover .brazil {
+  top: 0;
+  
+}
+.food-card img{
+  width: 150px;
+  z-index: 2;
+  position: relative;
+  height: 150px;
+}
+.food-card h2{
+  z-index: 2;
+  position: relative;
+}
+.foods .food-card .content p{
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  transition: 1s;
+}
+.image{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 10px 40px rgba(0,0,0,.2);
+}
+.details h2{
+  font-size: 18px;
+  color: white;
+}
+.details a{
+  color: #03a9f4;
+  font-size: 14px;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.food-card:hover .details h2 a{
+  color: black;
+}
+.food-card:hover .content  p{
+  color: black;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+  
+  font-size: 25px;
+}
+@media screen and (max-width: 768px) {
+  .foot h2{
+    margin-left: -0px;
+    width: 100%;
+}
+.foods .food-card{
+  margin-left: -45px;
+}
+.foot p{
+    margin-left: 10px;
+}
+.logo{
+  display: none;
+
+}
+
+#tr{
+  display: none;
+}
+.topnav{
+  display: block;
+}
+}
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}

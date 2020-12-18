@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./owlCarousel/dist/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./owlCarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+</head>
+<body>
+   
+    <div class="logo">
+        <img src="images/v.jpg" alt="">
+        <h1>Cuisnine house</h1>
+    </div>
+    <div class="topnav">
+        <a href="#home" class="active">Cusine house</a>
+        <div id="myLinks">
+          <a href="home.html">Home</a>
+          <a href="Breakfast.html">Breakfast</a>
+          <a href="dessert.html">Dessert</a>
+          <a href="reservation.html">Reservations</a>
+          <a href="lunch nd drinks.html">Lunch nd drinks</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div id="tr">
+        <ul>
+            <li><a href="Breakfast.html">Breakfast</a></li>
+            <li><a href="dessert.html">Dessert</a></li>
+            <li><a href="reservation.html">Reservations</a></li>
+            <li><a href="lunch nd drinks.html">Lunch and drinks</a></li>
+       </ul>
+    </div>
+     <!--Slideshow-->
+        <div class="mySlides">
+        <img src="images/pizza.jpg">
+        <h1>Cuisnine house</h1>
+        <p>Good food</p>
+        </div>
+        <div class="mySlides">
+        <img src="images/pasta.jpg">
+        <h1>Cuisnine house</h1>
+        <p>Fast delivery</p>
+        </div>
+        <div class="mySlides">
+        <img src="images/pan.jpg">
+        <h1>Cuisnine house</h1>
+        <p>Good hygiene</p>
+        </div>
+        
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+      </script>
+      <!--prices-->
+      <div class="prices">
+          <div class="price">
+              <h1>$5.00</h1>
+              <p>Fried rice</p>
+          </div>
+          <div class="price">
+              <h1>$10.00</h1>
+              <p>English Breakfast</p>
+          </div>
+      </div>
+      <div class="foods">
+          <div class="food">
+              <img src="images/break.jpg" alt="">
+              <h1>Breakfast</h1>
+              <p>Don't start your day on an empty stomach , enjoy an energizing breakfast to start your day strongly. </p>
+          </div>
+          <div class="food">
+            <img src="images/brunch.jpg" alt="">
+            <h1>Brunch</h1>
+            <p>If you can't make it for breakfast , and no time for lunch have brunch to keep you going.</p>
+        </div>
+        <div class="food">
+            <img src="images/music.jpg" alt="">
+            <h1>Drinks and music</h1>
+            <p>Have a good time with friends and family , at our club wih music and drinks.</p>
+        </div>
+        <div class="food">
+            <img src="images/cup.jpg" alt="">
+            <h1>Breakfast</h1>
+            <p>Dinner not enough , have some dessert and eat to your hearst content .</p>
+        </div>
+      </div>
+       <!--Slideshow 2-->
+       <div class="ji">
+        <div class="food jk">
+          <img src="images/break.jpg" alt="">
+          <h1>Breakfast</h1>
+          <p>Don't start your day on an empty stomach , enjoy an energizing breakfast to start your day strongly. </p>
+      </div>
+      <div class="food jk">
+        <img src="images/brunch.jpg" alt="">
+        <h1>Brunch</h1>
+        <p>If you can't make it for breakfast , and no time for lunch have brunch to keep you going.</p>
+    </div>
+    <div class="food jk">
+        <img src="images/music.jpg" alt="">
+        <h1>Drinks and music</h1>
+        <p>Have a good time with friends and family , at our club wih music and drinks.</p>
+    </div>
+    <div class="food jk">
+        <img src="images/cup.jpg" alt="">
+        <h1>Breakfast</h1>
+        <p>Dinner not enough , have some dessert and eat to your hearst content .</p>
+    </div>
+       </div>
+      
+      <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("jk");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 5000); // Change image every 5 seconds
+        }
+        </script>
+      <!--featured taco-->
+      <div class="featured">
+        <a href="order.html">
+          <img src="images/taco.jpg" alt="">
+          <h1>Our featured taco</h1>
+          <p>Slim Profile, easy to hold and loaded with cheese.</p>
+          <p>This is the one you have been waiting for click me to order</p>
+        </a>
+         
+         
+      </div>
+      <!--best foods-->
+      <div class="best">
+          <h1>Our best foods</h1>
+          <hr>
+          <div class="pics">
+              <img src="images/fried.jpg" alt="">
+              <img src="images/burger.jpg" alt="">
+              <img src="images/cake.jpg" alt="">
+              <img src="images/burito.jpg" alt="">
+              <img src="images/salad.jpg" alt="">
+              <img src="images/potato.jpg" alt="">
+          </div>
+          <div class="pics">
+              <img src="images/fish.jpg" alt="">
+              <img src="images/steak.jpg" alt="">
+              <img src="images/mix.jpg" alt="">
+          </div>
+      </div>
+     
+     <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
+      <div class="foot">
+        <footer>
+            <h2>2020 All Rights Reserved|Terms and Conditions|Privacy Policy</h2>
+            <p>Website Developed By Cuisine. Call Us for events: 07069217291</p>
+        </footer>
+      </div>
+
+</body>
+</html>
